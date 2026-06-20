@@ -212,40 +212,6 @@ filterBtns.forEach(btn => {
   });
 });
 
-/* ========== RESUME PREVIEW MODAL ========== */
-const resumePreviewBtn = document.getElementById('resumePreviewBtn');
-const resumeModal = document.getElementById('resumeModal');
-const resumeModalClose = document.getElementById('resumeModalClose');
-const resumeModalCloseBtn = document.getElementById('resumeModalCloseBtn');
-
-function openResumeModal() {
-  resumeModal.classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeResumeModal() {
-  resumeModal.classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-if (resumePreviewBtn) {
-  resumePreviewBtn.addEventListener('click', openResumeModal);
-}
-if (resumeModalClose) {
-  resumeModalClose.addEventListener('click', closeResumeModal);
-}
-if (resumeModalCloseBtn) {
-  resumeModalCloseBtn.addEventListener('click', closeResumeModal);
-}
-
-resumeModal.addEventListener('click', (e) => {
-  if (e.target === resumeModal) closeResumeModal();
-});
-
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && resumeModal.classList.contains('open')) closeResumeModal();
-});
-
 /* ========== COPY EMAIL ========== */
 const copyBtn = document.getElementById('copyEmail');
 if (copyBtn) {

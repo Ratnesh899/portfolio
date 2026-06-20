@@ -65,7 +65,7 @@
       <div class="hero-buttons">
         <a href="#projects" class="btn btn-primary">View Projects</a>
         <a href="./assets/resume.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer" download>Download Resume</a>
-        <button class="btn btn-outline" id="resumePreviewBtn">Preview Resume</button>
+        <a href="./assets/resume.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Preview Resume</a>
         <a href="#contact" class="btn btn-outline">Contact Me</a>
       </div>
     </div>
@@ -552,23 +552,6 @@
 
 <!-- ==================== TOAST ==================== -->
 <div class="toast" id="formToast">Message sent! I'll get back to you soon.</div>
-
-<!-- ==================== RESUME PREVIEW MODAL ==================== -->
-<div class="modal-overlay" id="resumeModal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3>Resume Preview</h3>
-      <button class="modal-close" id="resumeModalClose">&times;</button>
-    </div>
-    <div class="modal-body">
-      <iframe src="./assets/resume.pdf" class="resume-iframe" title="Resume Preview"></iframe>
-    </div>
-    <div class="modal-footer">
-      <a href="./assets/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer" download>Download Resume</a>
-      <button class="btn btn-outline" id="resumeModalCloseBtn">Close</button>
-    </div>
-  </div>
-</div>
 
 <script src="./script.js"></script>
 <script src="./chatbot.js"></script>
