@@ -1,0 +1,32 @@
+# Environment variables
+.env
+.env.*
+server/.env
+server/.env.example
+
+# Node.js dependencies
+server/node_modules/
+node_modules/
+
+# Local dev server (not used in production)
+server/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build / output
+dist/
+build/
+out/
+
+# Logs
+*.log
+npm-debug.log*

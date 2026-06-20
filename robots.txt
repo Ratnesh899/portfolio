@@ -1,0 +1,9 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ratnesh-mishra-portfolio.netlify.app/sitemap.xml
+
+# Disallow admin or private paths
+Disallow: /server/
